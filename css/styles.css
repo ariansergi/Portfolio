@@ -340,39 +340,36 @@ Hero
 */
 .hero .underline {
   margin-bottom: 0.5rem;
-  margin-left: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 .hero-img {
   display: none;
 }
 .hero {
   background: var(--clr-primary-10);
+  padding: 4rem 0 5rem;
 }
 .hero-center {
-  min-height: calc(100vh - 5rem);
   display: grid;
   place-items: center;
+  padding: 2rem 0;
+}
+.hero-info {
+  text-align: center;
 }
 .hero-info h4 {
   color: var(--clr-grey-5);
 }
 .hero-icons {
-  justify-items: start;
-}
-.hero-btn {
-  margin-top: 1.25rem;
+  margin-left: auto;
+  margin-right: auto;
+  justify-items: center;
 }
 @media screen and (min-width: 992px) {
-  .hero-img {
-    display: block;
+  .about-img {
     position: relative;
   }
-  .hero-center {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-@media screen and (min-width: 992px) {
-  .hero-img::before,
   .about-img::before {
     content: '';
     position: absolute;
@@ -671,63 +668,28 @@ Skills
     -webkit-column-gap: 2rem;
     -moz-column-gap: 2rem;
     column-gap: 2rem;
+    row-gap: 1.75rem;
   }
 }
 .skills {
   background: var(--clr-primary-9);
 }
 .skills h3 {
-  margin: 1.5rem 0;
+  margin: 0 0 0.5rem;
   color: var(--clr-primary-1);
 }
 .skill {
   margin-bottom: 1.25rem;
 }
 .skill p {
-  margin-bottom: 0.5rem;
-  text-transform: capitalize;
-  color: var(--clr-primary-1);
+  margin-bottom: 0;
+  color: var(--clr-grey-3);
+  line-height: 1.6;
 }
-.skill-container {
-  background: var(--clr-white);
-  height: 1rem;
-  width: 100%;
-  border-radius: var(--radius);
-  position: relative;
-}
-.skill-value {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: var(--clr-primary-5);
-  height: 100%;
-  width: 50%;
-  border-radius: var(--radius);
-}
-.value-70 {
-  width: 70%;
-}
-.value-80 {
-  width: 80%;
-}
-.value-90 {
-  width: 90%;
-}
-.skill-text {
-  position: absolute;
-  top: -1.5rem;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
-.skill-text-70 {
-  left: 70%;
-}
-.skill-text-80 {
-  left: 80%;
-}
-.skill-text-90 {
-  left: 90%;
+@media screen and (min-width: 768px) {
+  .skill {
+    margin-bottom: 0;
+  }
 }
 /*
 =============== 
